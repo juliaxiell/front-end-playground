@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片详情</title>
+    <link rel="stylesheet" href="../css1/bootstrap.min.css">
+    <script src="../jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/web-1.min.css">
+    <script src="../js/moviepart.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="top">
+            <div class="top-center">
+                <a href="" class="left">下载app</a>
+                <ul>
+                    <li>
+                        <a href="">登录</a>
+                    </li>
+                    <li>
+                        <a href="">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot-left">
+                <div class="logo">
+                    <img src="../img/logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>全国</span>
+                        </li>
+                        <li>
+                            <div class="nav-menu"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">影片</a>
+                    </li>
+                    <li>
+                        <a href="">影城</a>
+                    </li>
+                    <li>
+                        <a href="">影城资讯</a>
+                    </li>
+                    <li>
+                        <a href="">会员中心</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="text" placeholder="佩奇 白蛇2 我是猫">
+                <button><img src="../img/矢量智能对象.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间影片展示区域 -->
+    <div class="movie-show">
+        <div class="show-menu">
+            <div class="show-left"  id="movie-img">
+            </div>
+            <div class="show-right">
+                <div class="show-right-top">
+                    <p id="title"></p>
+                    <div id="film-type">
+                    </div>
+                    <div>
+                        <span id="region"></span>
+                        <span id="duration"></span>
+                    </div>
+                    <p id="release"></p>
+                </div>
+                <div class="show-right-bottom">
+                    <div class="bottom-left">
+                        <button>
+                            <img src="../images/影片详情1/icon-1.png" alt="">
+                            想看
+                        </button>
+                        <button>
+                            <img src="../images/影片详情1/icon-2.png" alt="">
+                            评分
+                        </button>
+                        <a   id="buy-ticket"  href="">
+                            特惠购票
+                        </a>
+                    </div>
+                    <div class="bottom-right">
+                        <p>蜗牛口碑</p>
+                        <p id="score-film"></p>
+                        <p>累计票房</p>
+                        <p>
+                            <span>2.38</span>
+                            <span>亿</span>
+                        </p>
+                        <div class="score">
+                            <img src="../img/影片详情页/star2.png" alt="">
+                            <img src="../img/影片详情页/star2.png" alt="">
+                            <img src="../img/影片详情页/star2.png" alt="">
+                            <img src="../img/影片详情页/star2.png" alt="">
+                            <img src="../img/影片详情页/star.png" alt="">
+                            <p>13.3万人评分</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 下方内容区域 -->
+    <div class="content">
+        <p>蜗牛电影 > 电影 > 盛夏未来</p>
+        <div class="movie-content">
+
+            <!-- 下左 -->
+            <div class="left">
+
+                <!-- 导航栏 -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">介绍</a>
+                    </li>
+                    <li role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">演职人员</a>
+                    </li>
+                </ul>
+
+                <!-- 下方内容 -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p >剧情简介</p>
+                        <span id="desc"></span>
+                        <div class="person">
+                            <div class="left">
+                                <p>演职人员</p>
+                            </div>
+                            <div class="right">
+                                <a href="">全部</a>
+                                <div>
+                                    <img src="../img/影片详情页/箭头.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actor">
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p>导演</p>
+                                </div>
+                                <img src="../images/影片详情1/img-2.png" alt="">
+                                <div class="actor-name">
+                                    <a href="" id="director">陈正道</a>
+                                </div>
+                                <div class="card-name">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p>演员</p>
+                                </div>
+                                <img src="../images/影片详情1/img-3.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">陈正道</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：陈辰</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/img-4.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">陈正道</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：郑宇星</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/img-5.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">陈正道</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：陈辰妈妈</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/img-6.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">陈正道</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：王叔叔</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="left">
+                                <p>热门短评</p>
+                            </div>
+                            <div class="right">
+                                <button type="button" id="but1" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    写短评
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="modal-body">
+                                                <p>请点击星星评分</p>
+                                                <div class="star">
+                                                    <img src="../images/影片详情1/icon-9.jpg" alt="">
+                                                    <img src="../images/影片详情1/icon-8.jpg" alt="">
+                                                    <img src="../images/影片详情1/icon-8.jpg" alt="">
+                                                    <img src="../images/影片详情1/icon-8.jpg" alt="">
+                                                    <img src="../images/影片详情1/icon-8.jpg" alt="">
+                                                </div>
+                                                <textarea name="" id="" cols="" rows="" placeholder="快来说说你的看法吧"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-content" id="filmcomments">
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p>导演（1）</p>
+                                </div>
+                                <img src="../images/影片详情1/img-2.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">陈正道</a>
+                                </div>
+                                <div class="card-name">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p>演员（8）</p>
+                                </div>
+                                <img src="../images/影片详情1/img-3.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">张子枫</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：陈辰</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/img-4.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">吴磊</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：郑宇星</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/img-5.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">郝蕾</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：陈辰妈妈</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/img-6.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">祖峰</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：王叔叔</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/影片详情2/img2-1.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">柳小海</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：陈辰爸爸</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="list2">
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/影片详情2/img2-2.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">刘丹</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：班主任</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/影片详情2/img2-3.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">周铁</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：郑宇星爸爸</span>
+                                </div>
+                            </div>
+                            <div class="actor-card">
+                                <div class="card-top">
+                                    <p></p>
+                                </div>
+                                <img src="../images/影片详情1/影片详情2/img2-4.png" alt="">
+                                <div class="actor-name">
+                                    <a href="">马乐</a>
+                                </div>
+                                <div class="card-name">
+                                    <span>饰：夜店李哥</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 下右 -->
+            <div class="content-right">
+
+                <!-- 导航栏 -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                            aria-controls="nav-home" aria-selected="true">预告片</a>
+                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                            aria-controls="nav-profile" aria-selected="false">相关资讯</a>
+                    </div>
+                </nav>
+
+                <!-- 下方内容 -->
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <p>预告片</p>
+                        <div class="movie-rank">
+                            <div class="img">
+                                <img src="../images/影片详情1/img-7.png" alt="">
+                                <div class="num">1</div>
+                            </div>
+                            <div class="word">
+                                <a href="">《盛夏未来》电影《盛夏未来...</a>
+                                <img src="../img/多边形793.png" alt="">
+                                <span>179.9万</span>
+                            </div>
+                        </div>
+                        <div class="movie-rank">
+                            <div class="img">
+                                <img src="../images/影片详情1/img-8.png" alt="">
+                                <div class="num">2</div>
+                            </div>
+                            <div class="word">
+                                <a href="">《盛夏未来》电影《盛夏未来...</a>
+                                <img src="../img/多边形793.png" alt="">
+                                <span>179.9万</span>
+                            </div>
+                        </div>
+                        <div class="movie-rank">
+                            <div class="img">
+                                <img src="../images/影片详情1/img-9.png" alt="">
+                                <div class="num">3</div>
+                            </div>
+                            <div class="word">
+                                <a href="">《盛夏未来》电影《盛夏未来...</a>
+                                <img src="../img/多边形793.png" alt="">
+                                <span>179.9万</span>
+                            </div>
+                        </div>
+                        <p class="p1">相关电影</p>
+                        <div class="more">
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-10.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">怒火·重案</a>
+                                <a href="">暂无评分</a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-11.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">兔子暴力</a>
+                                <a href=""><span>8.</span><span>8</span></a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-12.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">1921</a>
+                                <a href=""><span>8.</span><span>8</span></a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-13.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">拯救甜甜圈：时...</a>
+                                <a href="">暂无评分</a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-14.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">五个扑水的少年</a>
+                                <a href="">暂无评分</a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-15.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">二哥来了怎么办</a>
+                                <a href="">暂无评分</a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-16.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">当男人恋爱时</a>
+                                <a href=""><span>8.</span><span>8</span></a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-17.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">你好世界</a>
+                                <a href=""><span>8.</span><span>8</span></a>
+                            </div>
+                            <div class="card-movie">
+                                <div class="img">
+                                    <img src="../images/影片详情1/img-18.png" alt="">
+                                    <div>购票</div>
+                                </div>
+                                <a href="">西游记之再世...</a>
+                                <a href=""><span>8.</span><span>8</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="foot-top">
+
+            <ul>
+                <li >
+                    <h3>新手上路</h3>
+                    <div class="orange"></div>
+                    <div class="item1">
+                    <a href="">注册登录问题</a>
+                    <a href="">用户绑定会员卡问题</a>
+                    <a href="">用户绑定会员卡问题</a>
+                    <a href="">票价和支付问题</a>
+                    <a href="">取票凭证吗和取票问题</a>
+                </div>
+                <>
+                <li  >
+                    <h3>购票指南</h3>
+                    <div class="orange"></div>
+                    <div class="item2">
+                        <a href="">用户购票流程</a>
+                    <a href="">取票观影指南</a>
+                    <a href="">会员卡支付相关说明</a>
+                    <a href="">网银支付相关说明</a> 
+                    </div>
+                <>
+                <li  >
+                    <h3>会员权益</h3>
+                    <div class="orange"></div>
+                    <div class="item3">
+                        <a href="">会员订票权益</a>
+                    <a href="">会员积分权益</a>
+                    <a href="">入会资格</a>
+                    <a href="">会员卡折扣说明</a>
+                    </div>
+                <  >
+                <li>
+                    <h3>联系我们</h3>
+                    <div class="orange"></div>
+                    <div class="item4">
+                        <a href="">手机客户端介绍与下载</a>
+                    <a href="">影片信息查询</a>
+                    <a href="">手机自助购票</a>
+                    </div>
+                <>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="foot-bottom">
+             <p>公司介绍  -  合作咨询  -  友情链接  -  网站地图  -  站长统计  -  网站声明</p>
+             <p>Copyright  2021 ed by woniuxy</p>
+        </div>
+    </div>
+</body>
+
+</html>

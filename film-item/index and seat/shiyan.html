@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 0, 25);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <button type="submit"></button>
+    </div>
+    <script>
+        /*  document.querySelector(`.outer`).addEventListener(`click`,function(event){
+             console.log(`outer`)
+             //event.stopPropagation();
+             console.log(`inner`)
+         },true) */
+
+         $(`#filmcomments`).html(` <div class="comment-card">
+                <div class="card-top">
+                    <div class="left">
+                        <div class="img">
+                            <img src="../images/影片详情1/icon-5.png" alt="">
+                        </div>
+                        <div class="word">
+                            <p><a href="">Hp</a></p>
+                            <span>23小时前</span>
+                            <img src="../images/影片详情1/icon-8.jpg" alt="">
+                            <img src="../images/影片详情1/icon-8.jpg" alt="">
+                            <img src="../images/影片详情1/icon-8.jpg" alt="">
+                            <img src="../images/影片详情1/icon-8.jpg" alt="">
+                            <img src="../images/影片详情1/icon-9.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button><img src="../img/影片详情页/赞.png" alt=""></button>
+                        <span>158</span>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <span>${val}</span>
+                </div>
+              </div>`)
+
+
+        document.querySelector('.inner').addEventListener('click', function (event) {
+            console.log('inner被点击');
+            //阻止事件传播
+            event.stopPropagation();
+        },true);
+        document.querySelector('.outer').addEventListener('click', function (event) {
+            console.log('outer被点击');
+            //阻止事件传播
+             event.stopPropagation();
+        },true);
+    </script>
+</body>
+
+</html>

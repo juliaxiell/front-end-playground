@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-4.6.1-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/cinema-2.min.css">
+    <script src="https://api.map.baidu.com/api?v=1.0&type=webgl&ak=aF4dfBtsBD209YNrVcj40nWV7Lm4CQb6"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/cinema2.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="top-center">
+                <a href="" class="left">下载app</a>
+                <ul>
+                    <li>
+                        <a href="">登录</a>
+                    </li>
+                    <li>
+                        <a href="">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot-left">
+                <div class="logo">
+                    <img src="../images/主页/index-logo.jpg" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>全国</span>
+                        </li>
+                        <li>
+                            <div class="nav-menu"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">影片</a>
+                    </li>
+                    <li>
+                        <a href="">影城</a>
+                    </li>
+                    <li>
+                        <a href="">影城资讯</a>
+                    </li>
+                    <li>
+                        <a href="">会员中心</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="text" placeholder="佩奇 白蛇2 我是猫">
+                <button><img src="../images/主页/index-icon2.png" alt="">
+                    <tton>
+            </div>
+        </div>
+    </div>
+    <!-- 展示选中的影院信息 -->
+    <div class="banner">
+        <div>
+            <div >
+                <img id="cinema-img" src="" alt="">
+            </div>
+            <div>
+                <h4 id="cinema-name">太平洋影城（时代豪廷店）</h4>
+                <p id="cinema-address">郫都区望丛中路1092号时代豪廷广场3楼、4楼</p>
+                <p id="cinema-phone">电话：028-64148844</p>
+                <label>影院服务</label>
+                <div></div>
+                <ul>
+                    <li>
+                        <span>改签</span>
+                        <h6>未取票用户放映前3小时可改签</h6>
+                    </li>
+                    <li>
+                        <span>3D眼镜</span>
+                        <h6>免押金</h6>
+                    </li>
+                    <li><span>儿童优惠</span>
+                        <h6>一名成人仅可携带一名不足1.3米儿童无座免费观影（巨幕厅、情侣厅除外），...</h6>
+                    </li>
+                    <li> <span>WiFi</span>
+                        <h6>影院有免费WiFi</h6>
+                    </li>
+                    <li> <span>可停车</span>
+                        <h6>商场内可停车。（检票口可领取2小时免费停车券）</h6>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- 此处加载影院对应的地图信息 -->
+            <div class="map" id="cinema-map"></div>
+        </div>
+    </div>
+    <div class="word">蜗牛电影 > 影院 > <span id="cinema-name2"></span></div>
+    <div class="banner-1">
+        <div><img src="../images/影院/index1.png" alt=""></div>
+        <img src="../images/影院/img-3.png" alt="">
+        <img src="../images/影院/img-4.png" alt="">
+        <img src="../images/影院/img-5.png" alt="">
+        <img src="../images/影院/img-6.png" alt="">
+        <img src="../images/影院/img-7.png" alt="">
+        <img src="../images/影院/img-8.png" alt="">
+        <img src="../images/影院/用户_09.jpg" alt="">
+        <div><img src="../images/影院/index2.png" alt=""></div>
+    </div>
+    <div class="film-name">
+        <h5  id="filmName"></h5>
+        <h6>9.5分</h6>
+        <br>
+        <span>时长：</span>
+        <label for="">115分钟</label>
+        <span>类型：</span>
+        <label for="">剧情</label>
+        <span>主演：</span>
+        <label for="">张子枫 吴磊 郝蕾</label>
+    </div>
+    <div class="date"> <span>观影时间 :</span>
+        <p>今天 8月11</p>
+        <label for="">周六 8月14</label>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td>放映时间</td>
+                <td>语言版本</td>
+                <td>放映厅</td>
+                <td>售价（元）</td>
+                <td>选座购票</td>
+            </tr>
+        </thead>
+        <!-- 电影售票时间 JS控制售票状态 -->
+        <tbody>
+            <tr>
+                <td>
+                    <p class="start-time">14:45</p>
+                    <span>16:40散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button disabled="disabled"></button>
+                </td>
+            </tr>
+            <tr class="even">
+                <td>
+                    <p class="start-time">15:50</p>
+                    <span>17:45散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button>
+                        停止售票
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="start-time">17:00</p>
+                    <span>18:55散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button>
+                        停止售票
+                    </button>
+                   
+                </td>
+            </tr>
+            <tr class="even">
+                <td>
+                    <p class="start-time">18:05</p>
+                    <span>20:00散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button>
+                        停止售票
+                    </button>
+                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="start-time">19:15</p>
+                    <span>21:10散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button>
+                        停止售票
+                    </button>
+                </td>
+            </tr>
+            <tr class="even">
+                <td>
+                    <p class="start-time">20:20</p>
+                    <span>22:15 散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button>
+                        停止售票
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="start-time">21:35</p>
+                    <span>23:30散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state">
+                    <button disabled="disabled">停止售票</button>
+                </td>
+            </tr>
+            <tr class="even">
+                <td>
+                    <p class="start-time">22:35</p>
+                    <span>00:30散场</span>
+                </td>
+                <td>国语2D</td>
+                <td>2厅</td>
+                <td class="price">￥26.9</td>
+                <td class="state"><button>
+                        停止售票
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="footer">
+        <div class="foot-top">
+
+            <ul>
+                <li>
+                    <h3>新手上路</h3>
+                    <div class="orange"></div>
+                    <div class="item1">
+                        <a href="">注册登录问题</a>
+                        <a href="">用户绑定会员卡问题</a>
+                        <a href="">用户绑定会员卡问题</a>
+                        <a href="">票价和支付问题</a>
+                        <a href="">取票凭证吗和取票问题</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>购票指南</h3>
+                    <div class="orange"></div>
+                    <div class="item2">
+                        <a href="">用户购票流程</a>
+                        <a href="">取票观影指南</a>
+                        <a href="">会员卡支付相关说明</a>
+                        <a href="">网银支付相关说明</a>
+                    </div>
+                </li>>
+                <li>
+                    <h3>会员权益</h3>
+                    <div class="orange"></div>
+                    <div class="item3">
+                        <a href="">会员订票权益</a>
+                        <a href="">会员积分权益</a>
+                        <a href="">入会资格</a>
+                        <a href="">会员卡折扣说明</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>联系我们</h3>
+                    <div class="orange"></div>
+                    <div class="item4">
+                        <a href="">手机客户端介绍与下载</a>
+                        <a href="">影片信息查询</a>
+                        <a href="">手机自助购票</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="foot-bottom">
+            <p>公司介绍 - 合作咨询 - 友情链接 - 网站地图 - 站长统计 - 网站声明</p>
+            <p>Copyright 2021 ed by woniuxy</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

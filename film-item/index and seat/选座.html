@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/选座.css">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./js/seat.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="top-center">
+                <a href="" class="left">下载app</a>
+                <ul>
+                    <li>
+                        <a href="">登录</a>
+                    </li>
+                    <li>
+                        <a href="">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot-left">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>全国</span>
+                        </li>
+                        <li>
+                            <div class="nav-menu"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">影片</a>
+                    </li>
+                    <li>
+                        <a href="">影城</a>
+                    </li>
+                    <li>
+                        <a href="">影城资讯</a>
+                    </li>
+                    <li>
+                        <a href="">会员中心</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="text" placeholder="佩奇 白蛇2 我是猫">
+                <button><img src="./img/矢量智能对象.png" alt="">
+                    <tton>
+            </div>
+        </div>
+    </div>
+    <div class="select">
+        <div class="content">
+            <img src="./img/选座/img-icon1.jpg" alt="">
+            <div></div>
+            <img src="./img/选座/img-icon2.jpg" alt="">
+            <div></div>
+            <div></div>
+            <img src="./img/选座/img-icon3.jpg" alt="">
+            <div></div>
+            <img src="./img/选座/img-icon4.jpg" alt="">
+        </div>
+        <div class="number">
+
+        </div>
+        <div class="p">
+            <p>选择影片场次</p>
+            <p>选择座位</p>
+            <p>14分钟内付款</p>
+            <p>影院取票观影</p>
+        </div>
+    </div>
+    <div class="art">
+        <div class="box">
+
+            <ul class="three_color">
+                <li><img src="./img/选座/img-icon5.jpg" alt="">可选座位</li>
+                <li><img src="./img/选座/img-icon6.jpg" alt="">已售座位</li>
+                <li><img src="./img/选座/img-icon7.jpg" alt="">已选座位</li>
+            </ul>
+            <div class="white-line"></div>
+            <div class="gren-line"></div>
+            <p class="p">银幕中央</p>
+
+            <div class="seat" id="seats">
+                <div class="red" row="1" col="1"></div>
+                <div class="red" row="1" col="2"></div>
+                <div class="red" row="1" col="3"></div>
+                <div class="red" row="1" col="4"></div>
+                <div class="red" row="1" col="5"></div>
+                <div class="red" row="1" col="6"></div>
+                <div class="red" row="1" col="7"></div>
+                <div class="red" row="1" col="8"></div>
+                <div class="red" row="1" col="9"></div>
+                <div class="red" row="1" col="10"></div>
+                <div class="red" row="1" col="11"></div>
+                <div class="red" row="1" col="12"></div>
+                <div class="red" row="1" col="13"></div>
+                <div class="red" row="1" col="14"></div>
+                <div class="red" row="1" col="15"></div>
+                <div class="red" row="1" col="16"></div>
+                <!-- 第2排 -->
+                <div class="red" row="2" col="1"></div>
+                <div class="red" row="2" col="2"></div>
+                <div class="red" row="2" col="3"></div>
+                <div class="red" row="2" col="4"></div>
+                <div class="red" row="2" col="5"></div>
+                <div class="red" row="2" col="6"></div>
+                <div class="red" row="2" col="7"></div>
+                <div class="red" row="2" col="8"></div>
+                <div class="red" row="2" col="9"></div>
+                <div class="red" row="2" col="10"></div>
+                <div class="red" row="2" col="11"></div>
+                <div class="red" row="2" col="12"></div>
+                <div class="red" row="2" col="13"></div>
+                <div class="red" row="2" col="14"></div>
+                <div class="red" row="2" col="15"></div>
+                <div class="red" row="2" col="16"></div>
+                <!-- 第3排 -->
+                <div class="red" row="3" col="1"></div>
+                <div class="red" row="3" col="2"></div>
+                <div class="red" row="3" col="3"></div>
+                <div class="red" row="3" col="4"></div>
+                <div class="white"  row="3"  col="5"></div>
+                <div class="white"  row="3"  col="6"></div>
+                <div class="white"  row="3"  col="7"></div>
+                <div class="white"  row="3"  col="8"></div>
+                <div class="white"  row="3"  col="9"></div>
+                <div class="white"  row="3"  col="10"></div>
+                <div class="white"  row="3"  col="11"></div>
+                <div class="white"  row="3"  col="12"></div>
+                <div class="red"  row="3"  col="13"></div>
+                <div class="red"  row="3"  col="14"></div>
+                <div class="red"  row="3"  col="15"></div>
+                <div class="red"  row="3"  col="16"></div>
+                <!-- 第4排 -->
+                <div class="white"  row="4"  col="1"></div>
+                <div class="white"  row="4"  col="2"></div>
+                <div class="white"  row="4"  col="3"></div>
+                <div class="white"  row="4"  col="4"></div>
+                <div class="white"  row="4"  col="5"></div>
+                <div class="white"  row="4"  col="6"></div>
+                <div class="white"  row="4"  col="7"></div>
+                <div class="white"  row="4"  col="8"></div>
+                <div class="white"  row="4"  col="9"></div>
+                <div class="white"  row="4"  col="10"></div>
+                <div class="white"  row="4"  col="11"></div>
+                <div class="white"  row="4"  col="12"></div>
+                <div class="white"  row="4"  col="13"></div>
+                <div class="white"  row="4"  col="14"></div>
+                <div class="white"  row="4"  col="15"></div>
+                <div class="white"  row="4"  col="16"></div>
+                  <!-- 第5排 -->
+                <div class="white"  row="5"  col="1"></div>
+                <div class="white"  row="5"  col="2"></div>
+                <div class="white"  row="5"  col="3"></div>
+                <div class="white"  row="5"  col="4"></div>
+                <div class="white"  row="5"  col="5"></div>
+                <div class="white"  row="5"  col="6"></div>
+                <div class="white"  row="5"  col="7"></div>
+                <div class="white"  row="5"  col="8"></div>
+                <div class="white"  row="5"  col="9"></div>
+                <div class="white"  row="5"  col="10"></div>
+                <div class="white"  row="5"  col="11"></div>
+                <div class="white"  row="5"  col="12"></div>
+                <div class="white"  row="5"  col="13"></div>
+                <div class="white"  row="5"  col="14"></div>
+                <div class="white"  row="5"  col="15"></div>
+                <div class="white"  row="5"  col="16"></div>
+
+<!-- 第6排 -->
+                <div class="white index7 row2"  row="6" col="1"></div>
+                <div class="white index7 row3"  row="6" col="2"></div>
+                <div class="white index7 row4"  row="6" col="3"></div>
+                <div class="white index7 row5"  row="6" col="4"></div>
+                <div class="white index7 row6"  row="6" col="5"></div>
+                <div class="white index7 row7"  row="6" col="6"></div>
+                <div class="white index7 row10"  row="6" col="7"></div>
+                <div class="white index7 row11"  row="6" col="8"></div>
+                <div class="white index7 row12"  row="6" col="9"></div>
+                <div class="white index7 row13"  row="6" col="10"></div>
+                <div class="white index7 row14"  row="6" col="11"></div>
+<!-- 第7排 -->
+                <div class="white index8 row2"  row="7" col="1"></div>
+                <div class="white index8 row3"  row="7" col="2"></div>
+                <div class="white index8 row4"  row="7" col="3"></div>
+                <div class="white index8 row5"  row="7" col="4"></div>
+                <div class="white index8 row6"  row="7" col="5"></div>
+                <div class="white index8 row7"  row="7" col="6"></div>
+                <div class="white index8 row10"  row="7" col="7"></div>
+                <div class="white index8 row11"  row="7" col="8"></div>
+                <div class="white index8 row12"  row="7" col="9"></div>
+                <div class="white index8 row13"  row="7" col="10"></div>
+                <div class="white index8 row14"  row="7" col="11"></div>
+<!-- 第8排 -->
+                <div class="white index9 row2" row="8" col="1"></div>
+                <div class="white index9 row3" row="8" col="2"></div>
+                <div class="white index9 row4" row="8" col="3"></div>
+                <div class="white index9 row5" row="8" col="4"></div>
+                <div class="white index9 row6" row="8" col="5"></div>
+                <div class="white index9 row7" row="8" col="6"></div>
+                <div class="white index9 row10" row="8" col="7"></div>
+                <div class="white index9 row11" row="8" col="8"></div>
+                <div class="white index9 row12" row="8" col="9"></div>
+                <div class="white index9 row13" row="8" col="10"></div>
+                <div class="white index9 row14" row="8" col="11"></div>
+<!-- 第9排 -->
+                <div class="white index10 row2"  row="9" col="1"></div>
+                <div class="white index10 row3"  row="9" col="2"></div>
+                <div class="white index10 row4"  row="9" col="3"></div>
+                <div class="white index10 row5"  row="9" col="4"></div>
+                <div class="white index10 row6"  row="9" col="5"></div>
+                <div class="white index10 row7"  row="9" col="6"></div>
+                <div class="white index10 row10"  row="9" col="7"></div>
+                <div class="white index10 row11"  row="9" col="8"></div>
+                <div class="white index10 row12"  row="9" col="9"></div>
+                <div class="white index10 row13"  row="9" col="10"></div>
+                <div class="white index10 row14"  row="9" col="11"></div>
+<!-- 第10排 -->
+                <div class="white index11 row2"  row="10" col="1"></div>
+                <div class="white index11 row3"  row="10" col="2"></div>
+                <div class="white index11 row4"  row="10" col="3"></div>
+                <div class="white index11 row5"  row="10" col="4"></div>
+                <div class="white index11 row6"  row="10" col="5"></div>
+                <div class="white index11 row7"  row="10" col="6"></div>
+                <div class="white index11 row10"  row="10" col="7"></div>
+                <div class="white index11 row11"  row="10" col="8"></div>
+                <div class="white index11 row12"  row="10" col="9"></div>
+                <div class="white index11 row13"  row="10" col="10"></div>
+                <div class="white index11 row14"  row="10" col="11"></div>
+<!-- 第11排 -->
+                <div class="white index12 row2"  row="11" col="1"></div>
+                <div class="white index12 row3"  row="11" col="2"></div>
+                <div class="white index12 row4"  row="11" col="3"></div>
+                <div class="white index12 row7"  row="11" col="4"></div>
+                <div class="white index12 row8"  row="11" col="5"></div>
+                <div class="white index12 row9"  row="11" col="6"></div>
+                <div class="white index12 row10"  row="11" col="7"></div>
+                <div class="white index12 row11"  row="11" col="8"></div>
+                <div class="white index12 row12"  row="11" col="9"></div>
+                <div class="white index12 row13"  row="11" col="10"></div>
+                <div class="white index12 row14"  row="11" col="11"></div>
+
+            </div>
+
+        </div>
+        <div class="box2">
+            <img src="./img/选座/images/购票-选座-未选_03.jpg" alt="">
+            <div class="write"  id="user-seat">
+                <span>请</span>
+                <a href="">点击左侧</a>
+                <span>座位图选择座位</span>
+            </div>
+            <div class="money">
+                <p class="black">总价：</p>
+                <p class="red">￥</p>
+                <p class="price">0</p>
+            </div>
+            <div class="checking">
+                <form action="../pay and msg/html/web-payenter.html" id="confirm-seat">
+                    <input type="text" class="number tel-num" placeholder="输入手机号">
+                   
+                    <input type="text" class="password" placeholder="填写验证码">
+                    <canvas></canvas>
+                    <input type="submit" value="确认选座" class="yes">
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="foot-top">
+            <ul>
+                <li>
+                    <h3>新手上路</h3>
+                    <div class="orange"></div>
+                    <div class="item1">
+                        <a href="">注册登录问题</a>
+                        <a href="">用户绑定会员卡问题</a>
+                        <a href="">用户绑定会员卡问题</a>
+                        <a href="">票价和支付问题</a>
+                        <a href="">取票凭证吗和取票问题</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>购票指南</h3>
+                    <div class="orange"></div>
+                    <div class="item2">
+                        <a href="">用户购票流程</a>
+                        <a href="">取票观影指南</a>
+                        <a href="">会员卡支付相关说明</a>
+                        <a href="">网银支付相关说明</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>会员权益</h3>
+                    <div class="orange"></div>
+                    <div class="item3">
+                        <a href="">会员订票权益</a>
+                        <a href="">会员积分权益</a>
+                        <a href="">入会资格</a>
+                        <a href="">会员卡折扣说明</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>联系我们</h3>
+                    <div class="orange"></div>
+                    <div class="item4">
+                        <a href="">手机客户端介绍与下载</a>
+                        <a href="">影片信息查询</a>
+                        <a href="">手机自助购票</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="foot-bottom">
+            <p>公司介绍 - 合作咨询 - 友情链接 - 网站地图 - 站长统计 - 网站声明</p>
+            <p>Copyright © 2021 ed by woniuxy</p>
+        </div>
+    </div>
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>

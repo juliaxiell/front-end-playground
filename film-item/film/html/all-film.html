@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-4.6.1-dist/js/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/all-film.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="top-center">
+                <a href="" class="left">下载app</a>
+                <ul>
+                    <li>
+                        <a href="">登录</a>
+                    </li>
+                    <li>
+                        <a href="">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot-left">
+                <div class="logo">
+                    <img src="../images/主页/index-logo.jpg" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>全国</span>
+                        </li>
+                        <li>
+                            <div class="nav-menu"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="">首页</a>
+                    </li>
+                    <li>
+                        <a href="">影片</a>
+                    </li>
+                    <li>
+                        <a href="">影城</a>
+                    </li>
+                    <li>
+                        <a href="">影城资讯</a>
+                    </li>
+                    <li>
+                        <a href="">会员中心</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="text" placeholder="佩奇 白蛇2 我是猫">
+                <button><img src="../images/主页/index-icon2.png" alt="">
+                    <tton>
+            </div>
+        </div>
+    </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                aria-selected="true">正在热映</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                aria-selected="false">即将上映</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                aria-selected="false">经典影片</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <table>
+                <tr>
+                    <td>
+                        <span>类型:</span>
+                        <ul>
+                            <li class="all">全部</li>
+                            <li>爱情</li>
+                            <li>喜剧</li>
+                            <li>动画</li>
+                            <li>剧情</li>
+                            <li>恐怖</li>
+                            <li>惊悚</li>
+                            <li>科幻</li>
+                            <li>动作</li>
+                            <li>悬疑</li>
+                            <li>犯罪</li>
+                            <li>冒险</li>
+                            <li>战争</li>
+                            <li>奇幻</li>
+                            <li>运动</li>
+                            <li>家庭</li>
+                            <li>古装</li>
+                            <li>武侠</li>
+                            <li>西部</li>
+                            <li>历史</li>
+                            <li>传记</li>
+                            <li>歌舞</li>
+                            <li>黑色电影</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <span>区域:</span>
+                        <ul>
+                            <li class="all">全部</li>
+                            <li>大陆</li>
+                            <li>美国</li>
+                            <li>韩国</li>
+                            <li>日本</li>
+                            <li>中国香港</li>
+                            <li>中国台湾</li>
+                            <li>泰国</li>
+                            <li>印度</li>
+                            <li>法国</li>
+                            <li>英国</li>
+                            <li>俄罗斯</li>
+                            <li>意大利</li>
+                            <li>西班牙</li>
+                            <li>德国</li>
+                            <li>波兰</li>
+                            <li>澳大利亚</li>
+                            <li>伊朗</li>
+                            <li>其他</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <span>年代:</span>
+                        <ul>
+                            <li class="all">全部</li>
+                            <li>2021</li>
+                            <li>2020</li>
+                            <li>2019</li>
+                            <li>2018</li>
+                            <li>2017</li>
+                            <li>2016</li>
+                            <li>2015</li>
+                            <li>2014</li>
+                            <li>2013</li>
+                            <li>2012</li>
+                            <li>2011</li>
+                            <li>2000-2010</li>
+                            <li>90年代</li>
+                            <li>80年代</li>
+                            <li>70年代</li>
+                            <li>更早</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <div class="sort-order">
+                <div><input type="radio" name="sort" id=""> 按热门排序</div>
+                <div><input type="radio" name="sort" id=""> 按时间排序</div>
+                <div><input type="radio" name="sort" id=""> 按评价排序</div>
+
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">盛夏未来</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">白蛇2：青蛇</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-4.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">中国医生</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">贝肯熊2：金牌特工</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">新大头儿子和小头爸爸</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-7.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">兔子暴力</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-8.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">1921</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-9.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-10.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-11.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-12.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-13.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-14.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-15.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-16.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-17.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-18.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-19.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-20.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-21.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-22.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-23.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-24.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6">
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-25.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-26.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-27.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-28.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-29.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 10.2rem;">
+                            <img src="../images/影片/img-30.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">怒火·重案</p>
+                                <h5>9.5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
+    <div class="paging">
+        <button>1</button>
+        <button>2</button>
+        <button>下一页</button>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="foot-top">
+
+            <ul>
+                <li>
+                    <h3>新手上路</h3>
+                    <div class="orange"></div>
+                    <div class="item1">
+                        <a href="">注册登录问题</a>
+                        <a href="">用户绑定会员卡问题</a>
+                        <a href="">用户绑定会员卡问题</a>
+                        <a href="">票价和支付问题</a>
+                        <a href="">取票凭证吗和取票问题</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>购票指南</h3>
+                    <div class="orange"></div>
+                    <div class="item2">
+                        <a href="">用户购票流程</a>
+                        <a href="">取票观影指南</a>
+                        <a href="">会员卡支付相关说明</a>
+                        <a href="">网银支付相关说明</a>
+                    </div>
+                </li>>
+                <li>
+                    <h3>会员权益</h3>
+                    <div class="orange"></div>
+                    <div class="item3">
+                        <a href="">会员订票权益</a>
+                        <a href="">会员积分权益</a>
+                        <a href="">入会资格</a>
+                        <a href="">会员卡折扣说明</a>
+                    </div>
+                </li>
+                <li>
+                    <h3>联系我们</h3>
+                    <div class="orange"></div>
+                    <div class="item4">
+                        <a href="">手机客户端介绍与下载</a>
+                        <a href="">影片信息查询</a>
+                        <a href="">手机自助购票</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="foot-bottom">
+            <p>公司介绍 - 合作咨询 - 友情链接 - 网站地图 - 站长统计 - 网站声明</p>
+            <p>Copyright 2021 ed by woniuxy</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
